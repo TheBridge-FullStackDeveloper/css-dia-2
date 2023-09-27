@@ -1,0 +1,60 @@
+/* span{
+    display: block;
+}
+p{
+    display: none;
+    /* visibility: hidden; 
+} */
+body {
+  font-family: "Libre Baskerville", serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Mooli", sans-serif;
+  /* font-weight: 900; */
+}
+.container {
+  background-color: gray;
+  padding: 10px;
+  display: flex;
+  /* flex-direction: column;  si ponemos el column los ejes se invierten*/
+  flex-wrap: wrap;
+  justify-content: center; /*eje horizontal*/
+  align-items: center; /*eje vertical*/
+  height: 150vh;
+}
+p {
+  background-color: aliceblue;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+.container-span {
+  display: flex;
+  justify-content: flex-start;
+}
+img {
+  width: 5%;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px; /*defino espacio entre cada item*/
+}
+span {
+  font-size: 25px;
+}
+
+
+@media screen and (max-width: 329px) {
+ img{
+    width: 7%;
+ }
+ span{
+    font-size: 15px;
+ }
+ .container-span{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+ }
+  }
